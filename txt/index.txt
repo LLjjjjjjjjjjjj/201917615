@@ -1,0 +1,88 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head> 
+    <meta charset="UTF-8"> 
+    <title>index</title>
+    <link rel="stylesheet" type = "text/css" href="css/index.css"/> 
+</head> 
+<body>
+
+<canvas id="christmasCanvas"
+        style="top: 0px; left: 0px; z-index: 5000; position: fixed; pointer-events: none;"></canvas>
+<script>
+    var snow = function () {
+        var b = document.getElementById("christmasCanvas"), a = b.getContext("2d"), d = window.innerWidth,
+            c = window.innerHeight;
+        b.width = d;
+        b.height = c;
+        for (var e = [], b = 0; b < 70; b++) {
+            e.push({x: Math.random() * d, y: Math.random() * c, r: Math.random() * 4 + 1, d: Math.random() * 70})
+        }
+        var h = 0;
+        window.intervral4Christmas = setInterval(function () {
+            a.clearRect(0, 0, d, c);
+            a.fillStyle = "rgba(255, 255, 0, 0.6)";
+            a.shadowBlur = 5;
+            a.shadowColor = "rgba(255, 0, 0, 1)";
+            a.beginPath();
+            for (var b = 0; b < 70; b++) {
+                var f = e[b];
+                a.moveTo(f.x, f.y);
+                a.arc(f.x, f.y, f.r, 0, Math.PI * 2, !0)
+            }
+            a.fill();
+            h += 0.01;
+            for (b = 0; b < 70; b++) {
+                if (f = e[b], f.y += Math.cos(h + f.d) + 1 + f.r / 2, f.x += Math.sin(h) * 2, f.x > d + 5 || f.x < -5 || f.y > c) {
+                    e[b] = b % 3 > 0 ? {x: Math.random() * d, y: -10, r: f.r, d: f.d} : Math.sin(h) > 0 ? {
+                        x: -5,
+                        y: Math.random() * c,
+                        r: f.r,
+                        d: f.d
+                    } : {x: d + 5, y: Math.random() * c, r: f.r, d: f.d}
+                }
+            }
+        }, 70)
+    }
+    snow();
+</script>
+
+    <div class="home">
+        <div class="content">
+            <div class="stars"></div>
+            <img class="bgc" src="img/02.jpg" width="100%" alt="">
+            <h3 class="title">欢迎来到我的个人网站</h3>
+            <h3 class="titles">每天都要充满希望！</h3>
+            <div class='ribbon'>
+                <a href='./index.html'><span>index</span></a>
+                <a href='./我的.html'><span>我的</span></a>
+                <a href='./个人信息.html'><span>个人信息</span></a>
+
+            </div>
+
+        </div>
+       
+        <div class="introduce">
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="img/03.jpg" alt="">
+                <span class="introduce_item_title">天空还是一片浅蓝,转眼间东方出现了一道红霞,红霞慢慢地在扩大，不大一会就染红了小半边天。颜色红得可爱， 又 过了一会儿,在那个地方出现了太阳的小半边脸。</span>
+
+            </div>
+            <div class="introduce_item">
+
+                <span class="introduce_item_titles">当清晨的阳光洒进我们温馨的寝室，忙碌的一天又开始了，闹钟开始响起，每个人睡眼惺忪，从床上爬起，忙忙碌碌的穿梭在食堂与教室之间</span>
+                <img class="introduce_item_img" src="img/05.jpg" alt="">
+            </div>
+      
+            <div class="introduce_item">
+                <span class="introduce_item_titles">当晚自习结束后，抬头望向天空，几颗大而亮的星星挂在夜空，仿佛是天上的人儿提着灯笼在巡视那浩瀚的太空。美丽极了，裹紧衣裳，在这优美的夜色中慢慢的走回寝室。</span>
+                <img class="introduce_item_img" src="img/04.jpg" alt="">
+            </div>
+        </div>
+ 
+    </div>
+
+</body>
+
+
+</html>

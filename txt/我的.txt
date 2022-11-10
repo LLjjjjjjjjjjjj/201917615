@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" type = "text/css" href="css/我的.css"/>
+</head>
+<body>
+    <div class="我的">
+        <h3 class="about_tit">只要自己有了努力的方向，才能成就更好的自己</h3>
+        <img class="about_bgc" src="img/06.jpg" alt="">
+        <div class='ribbon'>
+            <a href='./index.html'><span>首页</span></a>
+                <a href='./我的.html'><span>我的</span></a>
+                <a href='./个人信息.html'><span>个人信息</span></a>
+
+        </div>
+        <div class="me">
+            <img class="me_img" src="img/08.jpg" alt="">
+            <span class="me_tit animate ">人的一生是短暂却又是充实的。我很庆幸能遇到一个能陪伴着一起走下去的人。即将大学毕业的我，觉得遇见你是此生最大的幸运。
+            </span>
+        </div>
+        <div class="hotpot">
+           <img class="hotpot_img" src="img/09.jpg" align="right">
+            <span>
+                   钟爱火锅，想吃的特别满足！             
+                    </span>
+           
+        </div>
+    </div>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" type = "text/css" href="css/个人信息.css"/>
+</head>
+<body>
+    <div class="information">
+        <img class="bgc" src="img/07.jpg" alt="">
+         <div class='ribbon'>
+            <a href='./index.html'><span>首页</span></a>
+                <a href='./我的.html'><span>我的</span></a>
+                <a href='./个人信息.html'><span>个人信息</span></a>
+
+        </div>
+        <div class="submit">
+            <span class="form_title">个人信息提交</span>
+            <div class="form_input">
+                <span>姓名：</span>
+                <input class="inputs" type="text" value="李骊锦">
+            </div>
+            <div class="form_input">
+                <span>班级:</span>
+                <input class="inputs" type="text" value="2019176班">
+            </div>
+            <div class="form_input">
+                <span>学号：</span>
+                <input class="inputs" type="text" value="201917615">
+            </div>
+            <div class="form_input">
+                <span>系部：</span>
+                <input class="inputs" type="text" value="信息工程系">
+            </div>
+            <div class="form_input">
+                <span>课程名称：</span>
+                <input class="inputs" type="text" value="人机交互的软件工程方法">
+            </div>
+            <div class="btn_submit">
+                <a href="./结束.html">
+                    <button class="btn">提交</button></a>
+                <a href="./index.html" class="back"><button class="home_href">首页</button></a>
+            </div>
+        </div>
+    </div>
+</body>
